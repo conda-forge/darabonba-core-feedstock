@@ -1,5 +1,5 @@
 {% set name = "darabonba-core" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6ede4e9bfd458148bab19ab2331716ae9b5c226ba5f6d221de6f88ee65704137
+  sha256: 0d729306e57c5bbe3957b2361aad1336781fb9617b256348ddd8558f13f6cbca
 
 build:
   noarch: python
