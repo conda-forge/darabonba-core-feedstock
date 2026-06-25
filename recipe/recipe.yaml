@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: darabonba-core
-  version: "1.0.6"
+  version: "1.0.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 0d729306e57c5bbe3957b2361aad1336781fb9617b256348ddd8558f13f6cbca
+  sha256: c2de2ee260682b4c08c9ec67793de66a2bdf316363b9165f152b9acaa16b4dc3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
