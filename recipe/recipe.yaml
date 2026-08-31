@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: darabonba-core
-  version: 1.0.8
+  version: "1.0.9"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f1661960b368e342d3d36434be82d264b70a01c49e843921d8a4dacd217376ae
+  sha256: 1026c965b4c2b48f89995eadad7ab780a03959812c8f8de4670eb44c48e5b179
 
 build:
   number: 0
