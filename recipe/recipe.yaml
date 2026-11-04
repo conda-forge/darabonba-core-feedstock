@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: darabonba-core
-  version: "1.0.9"
+  version: 1.0.10
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 1026c965b4c2b48f89995eadad7ab780a03959812c8f8de4670eb44c48e5b179
+  sha256: cef11108817e340e04bcfa299d502ca4f7fc922175a45ad122c9581dc8043c54
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - aiohttp >=3.7.0,<4.0.0
     - alibabacloud-tea
     - requests >=2.21.0,<3.0.0
+    - urllib3 >=1.26.0,<3.0.0
     - websocket-client >=1.6.0,<2.0.0
 tests:
   - python:
@@ -35,7 +36,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: The darabonba module of alibabaCloud Python SDK.
